@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>My example</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css"  type="text/css" media="screen"/>
+        <style>
+          
+          .header{
+        		background-color: #1E2225;
+            position: absolute;
+            top:0px;
+            height: 100px;
+            z-index: 10; 
+            opacity: 0.4;       	
+          }	
+          .content{
+            background-color: #2F8CCA;
+            background-image: url('images/twitter.png');
+            background-repeat:no-repeat;
+            background-position: center;
+            background-size: 500px;
+            position: absolute;
+            height: 1080px;
+        	}
+          .centered{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            /*vertical-align: middle;*/
+            margin-top: 300px
+          }
+          .title{
+            z-index: 15;
+            color: white;
+            margin-top: 15px;
+              
+          }
+          .logo{
+            position:absolute;
+            right:0px;
+            margin-top: 30px;
+          }
+          .tweet{
+            text-align: center;
+            font-size: 100px;
+            color: white;
+            margin-top: 300px;
+          }
+          .user{
+            text-align: right;
+            color: white;
+            font-size: 50px;
+            margin-top: 300px;
+          }
+        	.profile{
+            margin:5px;
+            padding: 5px;
+          
+            height:auto;
+            width:auto;
+            float:left;
+          }
+          .users{
+             margin-top: 300px;
+          }
+          p.social{
+            clear: both;
+            color: white;
+            font-size: 30px;
+          }
+          .selected{
+            border:1px solid #0000ff;
+          }
+        }
+        </style>
+    </head>
+
+    <body>
+      <div class="container-fluid">
+        <div class="row">
+  		    <div class="col-md-12 header">
+            <div class="col-md-5">
+              <span class="logo"><img src="images/twitter.png" alt="Twitter logo" height="50px"></span>
+            </div>
+            <div class="col-md-7 title">
+              <span><h1>#YOURVENUE</h1></span>
+            </div>
+          </div>
+          
+        </div>
+        <div class="row">
+            <div class="col-md-12 content">
+              <div class="col-md-3">
+                <div class="user">
+                  <strong>@George D</strong> says
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="tweet">
+                  I LOVE THIS PLACE!!!!
+                </div> 
+              </div>
+              <div class="col-md-3">
+                <div class="users">
+                  <div class="profile">
+                    <img src="images/user1.png" width="100">
+                  </div>
+                  <div class="profile">
+                    <img src="images/user2.png" width="100">
+                  </div>
+                  <div class="profile selected">
+                    <img src="images/user3.png" width="100">
+                  </div>
+                  <div class="profile">
+                    <img src="images/user4.png" width="100">
+                  </div>
+                   <p class="social">Just now via Twitter</p>
+                </div>
+               
+               
+            </div>
+		    
+  		  </div>
+      </div>
+  			
+
+   	  <script src="http://code.jquery.com/jquery.js"></script>
+      <script src="js/bootstrap.js"></script>
+    </body> 
+</html>    
